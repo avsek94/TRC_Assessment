@@ -37,7 +37,7 @@
     
         - name: Pull default Docker image
           docker_image:
-            name: "{{ default_container_image }}"
+            name: avsek12/trcweb
             source: pull
     
         # Creates the number of containers defined by the variable create_containers, using values from vars file
