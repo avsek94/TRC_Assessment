@@ -5,7 +5,7 @@
 
 try{
     docker stop $(docker ps -aq)
-    docker pull avsek12/trcweb | docker rm $(docker ps -aq) |  docker run --name trcweb -dp 80:80 avsek12/trcweb }
+    docker pull avsek12/trc_assessment:1.0.0 | docker rm $(docker ps -aq) |  docker run --name trcweb -dp 80:80 avsek12/trc_assessment:1.0.0 }
        
         catch{
         Write-Host $_.Exception.Message 
