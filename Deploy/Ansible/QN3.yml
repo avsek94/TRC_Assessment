@@ -35,16 +35,5 @@
           pip:
             name: docker
     
-        - name: Pull an image
-          docker_image:
-            name: avsek12/trc_assessment
-            source: pull
-    
-        # Creates the number of containers defined by the variable create_containers, using values from vars file
-        - name: Create default containers
-          docker_container:
-            name: "{{ default_container_name }}{{ item }}"
-            image: "{{ default_container_image }}"
-            command: "{{ default_container_command }}"
-            state: present
-          with_sequence: count={{ create_containers }}
+        - name: Deploy and run docker container
+          shell: docker stop $(docker ps -aq) && docker pull avsek12/trcweb && docker rm $(docker ps -aq) &&  docker run --name trcweb -dp 80:80 avsek12/trcweb
