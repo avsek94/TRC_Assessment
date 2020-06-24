@@ -33,7 +33,7 @@ try{
       Start-Process http://127.0.0.1:80
 ```
 
-### Take your automation to the next level: Assume you have root access on a freshly provisioned Linux server (Ubuntu). This server could be running in a Public Cloud, on prem as a Virtual Machine, or even a bare metal server. This system does not have Docker installed. Write a script (or modify your existing one) to handle the installation of packages required to run your container, pull a container image (or build your Dockerfile), and then launch your container.  Include error handling and documentation as needed.
+### Task 3 Take your automation to the next level: Assume you have root access on a freshly provisioned Linux server (Ubuntu). This server could be running in a Public Cloud, on prem as a Virtual Machine, or even a bare metal server. This system does not have Docker installed. Write a script (or modify your existing one) to handle the installation of packages required to run your container, pull a container image (or build your Dockerfile), and then launch your container.  Include error handling and documentation as needed.
 
 #### Assuming we dont have any configuration for this task i wrote an ansible playbook which installs all the dependencies for docker engine and deploys the website by pulling down the docker image from the docker hub. below are ansible playbook and inventory files.
 
