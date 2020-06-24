@@ -35,9 +35,9 @@
           pip:
             name: docker
     
-        - name: Pull default Docker image
+        - name: Pull an image
           docker_image:
-            name: avsek12/trcweb
+            name: avsek12/trc_assessment
             source: pull
     
         # Creates the number of containers defined by the variable create_containers, using values from vars file
