@@ -41,9 +41,6 @@
         - name: Docker pull 
           shell: docker pull avsek12/trc_assessment:1.0.0
         
-        - name: Docker remove container
-          shell: docker rm $(docker ps -aq)
-        
         - name: Docker Run 
           shell: docker run --name trcweb -d p 80:80 avsek12/trc_assessment:1.0.0
                  
