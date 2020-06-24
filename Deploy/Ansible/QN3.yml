@@ -1,7 +1,6 @@
 ---
     - hosts: all
       become: true
-      become: su
       vars_files:
         - vars/default.yml
     
