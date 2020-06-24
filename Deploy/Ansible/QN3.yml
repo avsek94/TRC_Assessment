@@ -35,8 +35,16 @@
           pip:
             name: docker
     
-        - name: Deploy and run docker container
-          shell: docker stop $(docker ps -aq) \ 
-                 docker pull avsek12/trcweb \ 
-                 docker rm $(docker ps -aq) \
-                 docker run --name trcweb -dp 80:80 avsek12/trcweb
+        - name: Docker Stop
+          shell: docker stop $(docker ps -aq)
+        
+        - name: Docker pull 
+          shell: docker pull avsek12/trcweb 
+        
+        - name: Docker remove container
+          shell: docker rm $(docker ps -aq)
+        
+        - name: Docker pull 
+          shell: docker run --name trcweb -dp 80:80 avsek12/trcweb
+
+                 
