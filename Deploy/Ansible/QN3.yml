@@ -37,6 +37,8 @@
     
         - name: Docker Stop
           shell: docker stop $(docker ps -aq)
+          become: true
+          become: root
         
         - name: Docker pull 
           shell: docker pull avsek12/trcweb 
@@ -44,7 +46,7 @@
         - name: Docker remove container
           shell: docker rm $(docker ps -aq)
         
-        - name: Docker pull 
+        - name: Docker Run 
           shell: docker run --name trcweb -dp 80:80 avsek12/trcweb
 
                  
