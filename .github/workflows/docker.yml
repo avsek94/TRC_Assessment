@@ -20,3 +20,5 @@ jobs:
      - name: docker push
        run: |
          docker push avsek12/trc_assessment:1.0.0
+
+# test
