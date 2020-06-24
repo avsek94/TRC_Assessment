@@ -42,5 +42,5 @@
           shell: docker pull avsek12/trc_assessment:1.0.0
         
         - name: Docker Run 
-          shell: docker run --name trcweb -d p 80:80 avsek12/trc_assessment:1.0.0
+          shell: docker run --detach --publish 80:80 --name trc-webserver avsek12/trc_assessment:1.0.0
                  
