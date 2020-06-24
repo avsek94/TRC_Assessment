@@ -17,7 +17,7 @@ jobs:
      - name: docker build
        run: |
          docker build . -t avsek12/trc_assessment:1.0.0
+     - name: docker push
        run: |
          docker push avsek12/trc_assessment:1.0.0
-
 # test
