@@ -19,4 +19,4 @@ jobs:
          docker build . -t trcweb:1.0.0
      - name: docker push
        run: |
-         docker push avsek94/TRC_Assessment:1.0.0
+         docker push avsek12/trc_assessment:1.0.0
