@@ -43,5 +43,5 @@
             state: present
           with_sequence: count={{ create_containers }}
         
-          - name: Run a containers
+        - name: Run a containers
             shell: docker run -d -t {{default_container_name}} -p 80:80 {{default_container_image}}
