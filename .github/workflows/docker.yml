@@ -16,9 +16,8 @@ jobs:
          docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
      - name: docker build
        run: |
-         docker build . -t avsek12/trc_assessment:1.0.0
-     - name: docker push
+         docker build . -t avsek12/trc_assessment:latest
        run: |
-         docker push avsek12/trc_assessment:1.0.0
+         docker push avsek12/trc_assessment:latest
 
 # test
