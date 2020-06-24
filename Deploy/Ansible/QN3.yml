@@ -1,6 +1,7 @@
 ---
     - hosts: all
       become: true
+      become: root
       vars_files:
         - vars/default.yml
     
@@ -37,8 +38,7 @@
     
         - name: Docker Stop
           shell: docker stop $(docker ps -aq)
-          become: true
-          become: root
+
         
         - name: Docker pull 
           shell: docker pull avsek12/trcweb 
@@ -47,6 +47,6 @@
           shell: docker rm $(docker ps -aq)
         
         - name: Docker Run 
-          shell: docker run --name trcweb -dp 80:80 avsek12/trcweb
+          shell: docker run --name trcweb -d p 80:80 avsek12/trcweb
 
                  
