@@ -26,3 +26,9 @@ RUN mkdir -p /usr/src/trc \
 && cd /usr/src/trc \
 && git clone https://github.com/avsek94/TRC_Assessment.git \
 && mv /usr/src/trc/TRC_Assessment/web/index.html /var/www/html
+
+test  test stwes twts st st s ts t st s wasdfpksadfl ;jasif
+
+fkjasd fjasd;flas/
+DEBIAN_FRONTENDkdfh asidkf sa]fsadfsa foi
+
